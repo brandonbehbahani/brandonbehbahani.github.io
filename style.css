@@ -15,7 +15,7 @@
 
   header h1 {
 
-    color: black;
+    color: #003366;
     font-size: 30px;
 
   }
@@ -167,7 +167,6 @@
 .navigation li:hover {
   padding: 1em;
   display:inline-block;
-  color: black;
   background-color: white;
 
 }
@@ -196,7 +195,6 @@ body {
 
 .navigation li a:hover {
   text-decoration: none;
-  color:white;
 }
 body {
   margin: 0;
