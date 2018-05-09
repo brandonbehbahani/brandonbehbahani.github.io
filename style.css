@@ -186,6 +186,12 @@
   color: lightgreen;
 }
 
+
+#headshot {
+  width: 10%;
+  height: 10%;
+  border: 1px solid black;
+}
 body {
   margin: 0;
   padding: 0;
