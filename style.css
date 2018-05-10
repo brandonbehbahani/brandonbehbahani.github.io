@@ -1,5 +1,26 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+
+  header {
+    width: 100%;
+  }
+
+  p {
+    padding: 2px;
+  }
+  .section2 {
+    padding:2px 2px; 
+  }
+  .section2 p{
+    padding: 2px;
+
+  }
+
+  .section2 h2 {
+    padding: 2px;
+  }
+
+
   .navigation {
     display: none;
   }
