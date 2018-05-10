@@ -1,5 +1,5 @@
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 780px) {
 
   header {
     width: 100%;
@@ -7,19 +7,28 @@
 
   p {
     padding: 2px;
+    text-align: left
+    font-size: 5px;
   }
   .section2 {
-    padding:2px 2px; 
+    padding:0px 0px;
+    text-align: center;
+  }
+  #headshot{
+    width: 200px;
+    height: 200px;
   }
   .section2 p{
-    padding: 2px;
-
+    padding: 0px;
+    margin: 0px;
   }
-
   .section2 h2 {
     padding: 2px;
   }
-
+  #codingPic  {
+  width: 200px;
+  height: 180px;
+}
 
   .navigation {
     display: none;
@@ -93,11 +102,50 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 780px) {
   #tab button {
     display: none;
   }
 
+  #headshot {
+    width: 200px;
+    height:200px;
+  }
+
+ #section1Container {
+   display : grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20%;
+
+ }
+ #section1Container p {
+   text-align: center;
+   position: relative;
+ }
+  #codingPic{
+    width: 200px;
+    height: 200px;
+  }
+
+  .mobileMenu {
+    background-color: #ccffcc;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+  .mobileMenu a {
+    text-decoration: none;
+    color: #003366;
+  }
+
+  .mobileMenu li{
+    display: inline-block;
+    padding: 10px;
+  }
   .navigation {
     position: fixed;
     background-color: #ccffcc ;
@@ -124,6 +172,10 @@
   .navigation li a {
     text-decoration: none;
     color: #003366;
+  }
+
+  .navigation li a:hover {
+    text-decoration: none;
   }
 }
 
@@ -193,7 +245,6 @@
   }
 
   .section4 {
-    height: 300px;
     padding: 5% 10%;
     text-align: center;
     border: 1px solid black;
@@ -201,6 +252,14 @@
     text-align: center;
     color: black;
     font-family: monospace, sans-serif;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .section4 ul li{
+    width: 300px;
+    align-items: center;
+    position: relative;
   }
 
   .section5 {
@@ -212,7 +271,7 @@
     background-attachment: fixed
   }
  .section6 {
-   height: 300px;
+
    padding: 5% 10%;
    text-align: center;
    border: 1px solid black;
@@ -232,7 +291,7 @@
 }
 
 .section8{
-  height: 300px;
+
   padding: 5% 10%;
   text-align: center;
   border: 1px solid black;
@@ -254,7 +313,7 @@
 }
 
 .section10{
-  height: 300px;
+
   padding: 5% 10%;
   text-align: center;
   border: 1px solid black;
@@ -277,7 +336,7 @@
 
 
 .section12 {
-  height: 300px;
+
   padding: 5% 10%;
   text-align: center;
   border: 1px solid black;
@@ -299,9 +358,7 @@ body {
   padding: 0;
 }
 
-.navigation li a:hover {
-  text-decoration: none;
-}
+
 body {
   margin: 0;
   padding: 0;
