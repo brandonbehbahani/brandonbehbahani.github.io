@@ -1,4 +1,115 @@
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  #tab {
+    display: inline;
+    z-index: 10;
+    background-color: #ccffcc;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-left: black solid 1px;
+    border-bottom: black solid 1px;
+    padding: 5px 5px;
+  }
 
+  .mobileMenu {
+    position: fixed;
+    border-left: black solid 1px;
+    width: 70%;
+    height: 100%;
+    z-index: 9;
+    background-color: #ccffcc;
+    text-align: left;
+    text-decoration: none;
+    right: 0px;
+    text-decoration-style: none;
+    padding: 5px 10px 10px 5px;
+  }
+
+  .mobileMenu ul {
+    padding: 5px;
+    text-decoration: none;
+    text-decoration-style: none;
+  }
+
+  .mobileMenu li {
+    margin: 20px;
+    padding: 20px;
+    text-decoration-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+
+  }
+
+
+  .mobileMenu li a {
+    text-decoration: none;
+    text-decoration-style: none;
+    padding: 5px 20px;
+    color: #003366;
+  }
+
+  .mobileMenu li a:hover {
+    background-color: white;
+  }
+  .navigation {
+    display: none;
+  }
+
+  #tab button {
+    border: none;
+  }
+
+  #tab button img {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    background-color: #ccffcc;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #tab button {
+    display: none;
+  }
+
+  .navigation {
+    position: fixed;
+    background-color: #ccffcc ;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+  }
+
+  .navigation li:hover {
+    padding: 1em;
+    display:inline-block;
+    background-color: white;
+
+  }
+
+
+  .navigation li {
+    padding: 1em;
+    display:inline-block;
+
+  }
+
+  .navigation li a {
+    text-decoration: none;
+    color: #003366;
+  }
+}
+
+#container {
+  margin: 0 0;
+  padding: 0 0;
+}
 
   header {
     background-color: #ccffcc;
@@ -23,11 +134,11 @@
 .photo-grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+
 }
  .section1 h2 {
    border-bottom: 1px solid black;
-   
+
  }
   .section1 {
     background-image: url("skyway1.jpg");
@@ -36,6 +147,7 @@
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed;
+    background-position: center;
 
   }
 
@@ -155,34 +267,7 @@
 
 }
 
-.navigation {
-  position: fixed;
-  background-color: #ccffcc ;
-  width: 100%;
-  z-index: 10;
-  border-bottom: 1px solid black;
 
-}
-
-.navigation li:hover {
-  padding: 1em;
-  display:inline-block;
-  background-color: white;
-
-}
-
-
-.navigation li {
-  padding: 1em;
-  display:inline-block;
-
-
-}
-
-.navigation li a {
-  text-decoration: none;
-  color: #003366;
-}
 
 
 #headshot {
