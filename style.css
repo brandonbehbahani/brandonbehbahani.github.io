@@ -397,4 +397,9 @@ h2 {
   height: 100px;
   padding: 5px;
   margin: 5px;
+  background-color: black;
+}
+
+.photo-grid-container img: hover {
+  background-color: white; 
 }
