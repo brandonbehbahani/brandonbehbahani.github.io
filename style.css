@@ -394,5 +394,7 @@ h2 {
 .photo-grid-container img {
   border: 1px solid black;
   width: 10%; 
-  height: 10%;  
+  height: 10%;
+  padding: 5px;
+  margin: 5px;
 }
