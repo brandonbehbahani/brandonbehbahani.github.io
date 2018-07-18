@@ -390,3 +390,9 @@ h2 {
   grid-column-template: 1fr 1fr 1fr;
   grid-gap: 5px;
 }
+
+.photo-grid-container img {
+  border: 1px solid black;
+  width: 10%; 
+  height: 10%;  
+}
