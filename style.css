@@ -389,7 +389,7 @@ h2 {
   display: grid;
   grid-column-template: 1fr 1fr 1fr;
   grid-gap: 5px;
-  margin: 0% 20% 0% 20%;
+  margin: 0% 30% 0% 30%;
 }
 
 .photo-grid-container img {
