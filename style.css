@@ -102,6 +102,16 @@
     width: 50px;
     background-color: #ccffcc;
   }
+  
+  .photo-grid-container img {
+  border: 1px solid black;
+  width: 5%px; 
+  height: 5%px;
+  padding: 3%;
+  margin: 3%;
+  background-color: black;
+}
+
 }
 
 
@@ -401,6 +411,3 @@ h2 {
   background-color: black;
 }
 
-.photo-grid-container img: hover {
-  background-color: white; 
-}
