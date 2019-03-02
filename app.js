@@ -10,3 +10,7 @@ function displayMobileMenu(){
         x.className = "navigation";
     }
 }
+
+$(document).click(function(){
+  $("#navigation").hide();
+});
