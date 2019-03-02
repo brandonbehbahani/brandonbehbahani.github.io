@@ -14,3 +14,8 @@ function displayMobileMenu(){
 $(document).click(function(){
   $("#navigation").hide();
 });
+
+
+$("#dropdown").click(function(e){
+  e.stopPropagation();
+});
