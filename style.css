@@ -226,7 +226,7 @@
 
  }
   .section1 {
-    background-image: url("skyway1.jpg");
+    background-image: url("./images/skyway1.jpg");
     height: 600px;
     width: 100%;
     background-size: cover;
@@ -250,7 +250,7 @@
   .section3 {
     height: 500px;
     width: 100%;
-    background-image: url("coding3.jpg");
+    background-image: url("./images/coding3.jpg");
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed;
@@ -277,7 +277,7 @@
   .section5 {
     height: 500px;
     width: 100%;
-    background-image: url("coding4.jpg");
+    background-image: url("./images/coding4.jpg");
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed
@@ -296,7 +296,7 @@
 .section7{
   height: 500px;
   width: 100%;
-  background-image: url("coding1.jpg");
+  background-image: url("./images/coding1.jpg");
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed
@@ -317,7 +317,7 @@
 .section9{
   height: 500px;
   width: 100%;
-  background-image: url("coding4.jpg");
+  background-image: url("./images/coding4.jpg");
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed
@@ -339,7 +339,7 @@
 .section11 {
   height: 500px;
   width: 100%;
-  background-image: url("coding4.jpg");
+  background-image: url("./images/coding4.jpg");
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed
