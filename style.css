@@ -184,6 +184,8 @@
   .navigation li a {
     text-decoration: none;
     color: #003366;
+    animation-name: fadein;
+    animation-duration: 3s;
   }
 
   .navigation li a:hover {
@@ -196,25 +198,29 @@
   padding: 0 0;
 }
 
-  header {
-    background-color: #ccffcc;
-    text-align: center;
-    margin: auto auto;
-    padding: 20px;
-    border: 1px black solid;
-    max-width: 400px;
-    font-family: monospace, sans-serif;
-    top:  300px;
-    position: relative;
-    box-shadow: 5px 5px 5px;
-  }
+header {
+  background-color: #ccffcc;
+  text-align: center;
+  margin: auto auto;
+  padding: 20px;
+  border: 1px black solid;
+  max-width: 400px;
+  font-family: monospace, sans-serif;
+  top:  300px;
+  position: relative;
+  box-shadow: 5px 5px 5px;
+   
+}
 
-  header h1 {
+header h1 {
 
-    color: #003366;
-    font-size: 30px;
+  color: #003366;
+  font-size: 30px;
 
-  }
+  animation-name: fadein;
+  animation-duration: 3s; 
+
+}
 
 .photo-grid-container{
   display: grid;
@@ -223,7 +229,7 @@
 }
  .section1 h2 {
    border-bottom: 1px solid black;
-
+   
  }
   .section1 {
     background-image: url("./images/skyway1.jpg");
@@ -233,6 +239,7 @@
     background-repeat: none;
     background-attachment: fixed;
     background-position: center;
+    background-color: #ccffcc; 
 
   }
 
@@ -296,7 +303,7 @@
 .section7{
   height: 500px;
   width: 100%;
-  background-image: url("images/coding1.jpg");
+  background-image: url("./images/coding1.jpg");
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed
@@ -393,6 +400,11 @@ h2 {
   font-size: 1.5m;
   color: #003366;
 
+  
+  animation-name: fadein;
+  animation-duration: fadein;
+
+
 }
 
 .photo-grid-container {
@@ -411,3 +423,78 @@ h2 {
   background-color: black;
 }
 
+@keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+
+@-webkit-keyframes coverfade {
+  from { 
+    background-color: rgba(200, 200, 200, 1);
+  }
+  to   { 
+    background-color: rgba(255, 255, 255, 0);
+   }
+}
+
+.fadecover {
+  animation-name: coverfade;
+  animation-duration: 3s;
+  width: 100%;
+  height: 100%;
+}

@@ -1,6 +1,3 @@
-
-
-
 function displayMobileMenu(){
   console.log("mobile menu");
   var x = document.getElementById("navigation");
