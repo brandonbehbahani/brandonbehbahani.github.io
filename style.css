@@ -494,7 +494,25 @@ h2 {
 
 .fadecover {
   animation-name: coverfade;
-  animation-duration: 3s;
+  animation-duration: 6s;
   width: 100%;
   height: 100%;
+}
+
+
+
+@-webkit-keyframes dropin {
+  from { 
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateY(0);
+    opacity: 1;
+   }
+}
+
+.dropin {
+  animation-name: dropin;
+  animation-duration: 4s;
 }
