@@ -1,7 +1,23 @@
+* {
+  padding: 0;
+  margin:0
+}
 
-#container {
-  margin: 0 0;
-  padding: 0 0;
+h1 {
+  color: #003366;
+  font-size: 30px;
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+h2 {
+  margin: auto;
+  padding: 5px;
+  font-size: 1.5m;
+  color: #003366;  
+  animation-name: fadein;
+  animation-duration: 4s;  
+  font-family: monospace, sans-serif;
 }
 
 header {
@@ -15,88 +31,99 @@ header {
   top:  300px;
   position: relative;
   box-shadow: 5px 5px 5px;
-   
 }
 
-header h1 {
+a {
+  font-size: 1em;
+}
 
-  color: #003366;
-  font-size: 30px;
+p {
+  padding: 1.2em;
+  font-size: 1.2em;
+  font-family: monospace, sans-serif;
+}
 
-  animation-name: fadein;
-  animation-duration: 3s; 
+#container {
+  margin: 0;
+  padding: 0;
+}
+
+#headshot {
+  width: 200px;
+  height: 200px;
+}
+
+#codingPic  {
+  width: 200px;
+  height: 200px;
+}
+
+.contentsection{
+  padding: 5px;
+  margin: 5px;
+  background-color: #ccffcc;
+  border: black 1px solid;
+}
+
+.section1 {
+  background-image: url("./images/skyway1.jpg");
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #ccffcc; 
 
 }
 
- .section1 h2 {
-   border-bottom: 1px solid black;
-   
- }
-  .section1 {
-    background-image: url("./images/skyway1.jpg");
-    height: 600px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #ccffcc; 
+.section2 {
+  padding: 3em 7em;
+  text-align: center;
+  border: black 1px solid;
+  background-color: #ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace;
+}
 
-  }
+.section3 {
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/coding3.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+}
 
-  .section2 {
-    padding: 3em 7em;
-    text-align: center;
-    border: black 1px solid;
-    background-color: #ccffcc;
-    text-align: center;
-    color: black;
-    font-family: monospace;
+.section4 {
+  padding: 5% 10%;
+  text-align: center;
+  border: 1px solid black;
+  background-color:#ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace, sans-serif;
+  font-size: 12px;
+  align-items: center;
+}
 
-  }
+.section5 {
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/coding4.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed
+}
 
-  .section3 {
-    height: 500px;
-    width: 100%;
-    background-image: url("./images/coding3.jpg");
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-  }
-
-  .section4 {
-    padding: 5% 10%;
-    text-align: center;
-    border: 1px solid black;
-    background-color:#ccffcc;
-    text-align: center;
-    color: black;
-    font-family: monospace, sans-serif;
-    font-size: 12px;
-    align-items: center;
-  }
-
-  .section4 ul li{
-    width: 300px;
-    align-items: center;
-    position: relative;
-  }
-
-  .section5 {
-    height: 500px;
-    width: 100%;
-    background-image: url("./images/coding4.jpg");
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed
-  }
- .section6 {
-   border: 1px solid black;
-   background-color: #ccffcc;
-   text-align: center;
-   color: black;
-   font-family: monospace, sans-serif;
- }
+.section6 {
+  border: 1px solid black;
+  background-color: #ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace, sans-serif;
+}
 
 .section7{
   height: 500px;
@@ -130,15 +157,12 @@ header h1 {
 }
 
 .section10{
-
   padding: 5% 10%;
   text-align: center;
   border: 1px solid black;
   background-color: #ccffcc;
   text-align: center;
   color: black;
-  font-family: monospace, sans-serif;
-
 }
 
 .section11 {
@@ -151,9 +175,7 @@ header h1 {
 
 }
 
-
 .section12 {
-
   padding: 5% 10%;
   text-align: center;
   border: 1px solid black;
@@ -161,42 +183,6 @@ header h1 {
   text-align: center;
   color: black;
   font-family: monospace, sans-serif;
-
-}
-
-#headshot {
-  border: 1px solid black;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 400px; 
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  margin-top: 0;
-  padding: 0;
-  margin:0
-}
-
-p {
-  padding: 1.2em;
-  font-size: 1.2em;
-}
-
-h2 {
-  margin: auto;
-  padding: 5px;
-  font-size: 1.5m;
-  color: #003366;  
-  animation-name: fadein;
-  animation-duration: 4s;
 }
 
 .photo-grid-container {
@@ -204,14 +190,19 @@ h2 {
   width: 70%;
   padding: 10px;
   justify-items: center;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px; 
+  grid-gap: 8px;
 }
 
 .photo-grid-container img {
   width: 100px; 
   height: 100px;
+}
+
+.photo-grid-container img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @keyframes fadein {
@@ -273,7 +264,6 @@ h2 {
    }
 }
 
-
 @-webkit-keyframes coverfade {
   from { 
     background-color: rgba(200, 200, 200, 1);
@@ -289,8 +279,6 @@ h2 {
   width: 100%;
   height: 100%;
 }
-
-
 
 @-webkit-keyframes dropin {
   from { 
@@ -308,30 +296,13 @@ h2 {
   animation-duration: 4s;
 }
 
-
-
-
-
 /* When the screen is less than 1100 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media only screen and (max-width: 1100px) {
-
-  header {
-    width: 100%;
-  }
-
-  p {
-    padding: 0px;
-    text-align: left
-    font-size: 2px;
-  }
   .section2 {
     padding:0px 0px;
     text-align: center;
   }
-  #headshot{
-    width: 200px;
-    height: 200px;
-  }
+
   .section2 p{
     padding: 0px;
     margin: 0px;
@@ -342,12 +313,11 @@ h2 {
   #codingPic  {
   width: 200px;
   height: 180px;
-}
+  }
 
   .navigation {
     display: none;
   }
-
 
   #tab {
     display: inline;
@@ -391,7 +361,6 @@ h2 {
 
   }
 
-
   .mobileMenu li a {
     text-decoration: none;
     text-decoration-style: none;
@@ -415,26 +384,13 @@ h2 {
     height: 50px;
     width: 50px;
     background-color: #ccffcc;
-  }
-  
+  }  
 
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 1100px) {
   #tab button {
     display: none;
-  }
-
-  #headshot {
-    width: 200px;
-    height:200px;
   }
 
  #section1Container {
@@ -447,10 +403,6 @@ h2 {
    text-align: center;
    position: relative;
  }
-  #codingPic{
-    width: 200px;
-    height: 200px;
-  }
 
   .mobileMenu {
     background-color: #ccffcc;
