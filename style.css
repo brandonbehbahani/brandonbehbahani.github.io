@@ -1,5 +1,319 @@
+
+#container {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+header {
+  background-color: #ccffcc;
+  text-align: center;
+  margin: auto auto;
+  padding: 20px;
+  border: 1px black solid;
+  max-width: 400px;
+  font-family: monospace, sans-serif;
+  top:  300px;
+  position: relative;
+  box-shadow: 5px 5px 5px;
+   
+}
+
+header h1 {
+
+  color: #003366;
+  font-size: 30px;
+
+  animation-name: fadein;
+  animation-duration: 3s; 
+
+}
+
+ .section1 h2 {
+   border-bottom: 1px solid black;
+   
+ }
+  .section1 {
+    background-image: url("./images/skyway1.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #ccffcc; 
+
+  }
+
+  .section2 {
+    padding: 3em 7em;
+    text-align: center;
+    border: black 1px solid;
+    background-color: #ccffcc;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+
+  }
+
+  .section3 {
+    height: 500px;
+    width: 100%;
+    background-image: url("./images/coding3.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+  }
+
+  .section4 {
+    padding: 5% 10%;
+    text-align: center;
+    border: 1px solid black;
+    background-color:#ccffcc;
+    text-align: center;
+    color: black;
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .section4 ul li{
+    width: 300px;
+    align-items: center;
+    position: relative;
+  }
+
+  .section5 {
+    height: 500px;
+    width: 100%;
+    background-image: url("./images/coding4.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed
+  }
+ .section6 {
+   border: 1px solid black;
+   background-color: #ccffcc;
+   text-align: center;
+   color: black;
+   font-family: monospace, sans-serif;
+ }
+
+.section7{
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/coding1.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed
+}
+
+.section8{
+
+  padding: 5% 10%;
+  text-align: center;
+  border: 1px solid black;
+  background-color:#ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace, sans-serif;
+
+}
+
+.section9{
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/coding4.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed
+
+}
+
+.section10{
+
+  padding: 5% 10%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace, sans-serif;
+
+}
+
+.section11 {
+  height: 500px;
+  width: 100%;
+  background-image: url("./images/coding4.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed
+
+}
+
+
+.section12 {
+
+  padding: 5% 10%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #ccffcc;
+  text-align: center;
+  color: black;
+  font-family: monospace, sans-serif;
+
+}
+
+#headshot {
+  border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 400px; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin-top: 0;
+  padding: 0;
+  margin:0
+}
+
+p {
+  padding: 1.2em;
+  font-size: 1.2em;
+}
+
+h2 {
+  margin: auto;
+  padding: 5px;
+  font-size: 1.5m;
+  color: #003366;  
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+.photo-grid-container {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px; 
+}
+
+.photo-grid-container img {
+  width: 100px; 
+  height: 100px;
+}
+
+@keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { 
+    transform: translateX(75px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateX(0);
+    opacity: 1;
+   }
+}
+
+
+@-webkit-keyframes coverfade {
+  from { 
+    background-color: rgba(200, 200, 200, 1);
+  }
+  to   { 
+    background-color: rgba(255, 255, 255, 0);
+   }
+}
+
+.fadecover {
+  animation-name: coverfade;
+  animation-duration: 6s;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@-webkit-keyframes dropin {
+  from { 
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to   { 
+    transform: translateY(0);
+    opacity: 1;
+   }
+}
+
+.dropin {
+  animation-name: dropin;
+  animation-duration: 4s;
+}
+
+
+
+
+
 /* When the screen is less than 1100 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
 
   header {
     width: 100%;
@@ -103,16 +417,13 @@
     background-color: #ccffcc;
   }
   
-  .photo-grid-container img {
-  border: 1px solid black;
-  width: 5%px; 
-  height: 5%px;
-  padding: 3%;
-  margin: 3%;
-  background-color: black;
-}
 
 }
+
+
+
+
+
 
 
 
@@ -191,328 +502,4 @@
   .navigation li a:hover {
     text-decoration: none;
   }
-}
-
-#container {
-  margin: 0 0;
-  padding: 0 0;
-}
-
-header {
-  background-color: #ccffcc;
-  text-align: center;
-  margin: auto auto;
-  padding: 20px;
-  border: 1px black solid;
-  max-width: 400px;
-  font-family: monospace, sans-serif;
-  top:  300px;
-  position: relative;
-  box-shadow: 5px 5px 5px;
-   
-}
-
-header h1 {
-
-  color: #003366;
-  font-size: 30px;
-
-  animation-name: fadein;
-  animation-duration: 3s; 
-
-}
-
-.photo-grid-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-}
- .section1 h2 {
-   border-bottom: 1px solid black;
-   
- }
-  .section1 {
-    background-image: url("./images/skyway1.jpg");
-    height: 600px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #ccffcc; 
-
-  }
-
-  .section2 {
-    padding: 3em 7em;
-    text-align: center;
-    border: black 1px solid;
-    background-color: #ccffcc;
-    text-align: center;
-    color: black;
-    font-family: monospace;
-
-  }
-
-  .section3 {
-    height: 500px;
-    width: 100%;
-    background-image: url("./images/coding3.jpg");
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed;
-  }
-
-  .section4 {
-    padding: 5% 10%;
-    text-align: center;
-    border: 1px solid black;
-    background-color:#ccffcc;
-    text-align: center;
-    color: black;
-    font-family: monospace, sans-serif;
-    font-size: 12px;
-    align-items: center;
-  }
-
-  .section4 ul li{
-    width: 300px;
-    align-items: center;
-    position: relative;
-  }
-
-  .section5 {
-    height: 500px;
-    width: 100%;
-    background-image: url("./images/coding4.jpg");
-    background-size: cover;
-    background-repeat: none;
-    background-attachment: fixed
-  }
- .section6 {
-
-   padding: 5% 10%;
-   text-align: center;
-   border: 1px solid black;
-   background-color: #ccffcc;
-   text-align: center;
-   color: black;
-   font-family: monospace, sans-serif;
- }
-
-.section7{
-  height: 500px;
-  width: 100%;
-  background-image: url("./images/coding1.jpg");
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: fixed
-}
-
-.section8{
-
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color:#ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-
-}
-
-.section9{
-  height: 500px;
-  width: 100%;
-  background-image: url("./images/coding4.jpg");
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: fixed
-
-}
-
-.section10{
-
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color: #ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-
-}
-
-.section11 {
-  height: 500px;
-  width: 100%;
-  background-image: url("./images/coding4.jpg");
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: fixed
-
-}
-
-
-.section12 {
-
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color: #ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-
-}
-
-
-
-
-#headshot {
-  border: 1px solid black;
-}
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 400px; 
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  margin-top: 0;
-  padding: 0;
-  margin:0
-}
-
-p {
-  padding: 1.2em;
-  font-size: 1.2em;
-}
-
-h2 {
-  padding: 1.5em;
-  font-size: 1.5m;
-  color: #003366;
-
-  
-  animation-name: fadein;
-  animation-duration: fadein;
-
-
-}
-
-.photo-grid-container {
-  display: grid;
-  grid-column-template: 1fr 1fr 1fr;
-  grid-gap: 5px;
-  margin: 0% 30% 0% 30%;
-}
-
-.photo-grid-container img {
-  border: 1px solid black;
-  width: 100px; 
-  height: 100px;
-  padding: 5px;
-  margin: 5px;
-  background-color: black;
-}
-
-@keyframes fadein {
-  from { 
-    transform: translateX(75px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateX(0);
-    opacity: 1;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { 
-    transform: translateX(75px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateX(0);
-    opacity: 1;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { 
-    transform: translateX(75px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateX(0);
-    opacity: 1;
-   }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from { 
-    transform: translateX(75px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateX(0);
-    opacity: 1;
-   }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from { 
-    transform: translateX(75px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateX(0);
-    opacity: 1;
-   }
-}
-
-
-@-webkit-keyframes coverfade {
-  from { 
-    background-color: rgba(200, 200, 200, 1);
-  }
-  to   { 
-    background-color: rgba(255, 255, 255, 0);
-   }
-}
-
-.fadecover {
-  animation-name: coverfade;
-  animation-duration: 6s;
-  width: 100%;
-  height: 100%;
-}
-
-
-
-@-webkit-keyframes dropin {
-  from { 
-    transform: translateY(-25px);
-    opacity: 0;
-  }
-  to   { 
-    transform: translateY(0);
-    opacity: 1;
-   }
-}
-
-.dropin {
-  animation-name: dropin;
-  animation-duration: 4s;
 }
