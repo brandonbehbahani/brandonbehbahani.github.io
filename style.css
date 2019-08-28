@@ -53,6 +53,11 @@ p {
   font-family: monospace, sans-serif;
 }
 
+.slider {
+  display: none;
+  z-index: 1;
+}
+
 #headshot {
   width: 200px;
   height: 200px;
@@ -338,6 +343,7 @@ p {
     display: inline-block;
     padding: 10px;
   }
+
   .navigation {
     display: inline;
     position: fixed;
@@ -360,6 +366,7 @@ p {
   }
 
   .navigation li a {
+    font-size: 1rem;
     text-decoration: none;
     color: #f4f4f1;
     animation-name: fadein;
@@ -368,5 +375,18 @@ p {
 
   .navigation li a:hover {
     text-decoration: none;
+  }
+
+  #about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #social-grid {
+    display: grid;
+    width: 50%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
   }
 }
