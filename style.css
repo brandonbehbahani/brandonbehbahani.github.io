@@ -17,7 +17,7 @@ h2 {
   font-size: 1.5m;
   color: #87847d;
   animation-name: fadein;
-  animation-duration: 4s;  
+  animation-duration: 4s;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
@@ -29,7 +29,6 @@ header {
   padding: 20px;
   border: 1px black solid;
   max-width: 400px;
-  font-family: monospace, sans-serif;
   top:  300px;
   position: relative;
   box-shadow: 5px 5px 5px;
@@ -40,8 +39,8 @@ header {
 }
 
 a {
-  font-size: 1em;
-  font-family: monospace, sans-serif;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
   margin: 2px;
   display: block;
   color: #5f5666;
@@ -91,7 +90,7 @@ p {
   height: auto;
   display: inline;
   z-index: 10;
-  background-color: #f4f4f1;
+  background-color: #c39d80;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -100,13 +99,24 @@ p {
   padding: 5px 5px;
 }
 
+#tab button {
+  border: none;
+}
+
+#tab button img {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  background-color: #c39d80;
+}  
+
 .mobileMenu {
   position: fixed;
   border-left: black solid 1px;
   width: 70%;
   height: 100%;
   z-index: 9;
-  background-color: #f4f4f1;
+  background-color: #c39d80;
   text-align: left;
   text-decoration: none;
   right: 0px;
@@ -135,26 +145,15 @@ p {
   text-decoration: none;
   text-decoration-style: none;
   padding: 1%;
-  color: #003366;
+  color: #f4f4f1;
 }
 
 .mobileMenu li a:hover {
-  background-color: white;
+  background-color: #87847d;
 }
 .navigation {
   display: none;
 }
-
-#tab button {
-  border: none;
-}
-
-#tab button img {
-  display: inline;
-  width: 100%;
-  height: 100%;
-  background-color: #f4f4f1;
-}  
 
 #section1 {
   background-image: url("./images/skyway1.jpg");
@@ -323,7 +322,7 @@ p {
   }
 
   .mobileMenu {
-    background-color: #5f5666;
+    background-color: #f4f4f1;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -342,7 +341,7 @@ p {
   .navigation {
     display: inline;
     position: fixed;
-    background-color: #5f5666 ;
+    background-color: #c39d80;
     width: 100%;
     z-index: 10;
     border-bottom: 1px solid black;
@@ -352,7 +351,7 @@ p {
   .navigation li:hover {
     padding: 1em;
     display:inline-block;
-    background-color: white;
+    background-color: #87847d;
   }
 
   .navigation li {
@@ -362,7 +361,7 @@ p {
 
   .navigation li a {
     text-decoration: none;
-    color: #c39d80;
+    color: #f4f4f1;
     animation-name: fadein;
     animation-duration: 3s;
   }
