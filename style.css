@@ -67,7 +67,8 @@ p {
 }
 
 #social img{
-  width: 10%;
+  padding: 20px;
+  width: 200px;
   height: auto;
 }
 
