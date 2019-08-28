@@ -18,12 +18,13 @@ h2 {
   animation-name: fadein;
   animation-duration: 4s;  
   font-family: monospace, sans-serif;
+  text-align: center;
 }
 
 header {
   background-color: #ccffcc;
-  text-align: center;
   margin: auto auto;
+  text-align: center;
   padding: 20px;
   border: 1px black solid;
   max-width: 400px;
@@ -33,11 +34,17 @@ header {
   box-shadow: 5px 5px 5px;
 }
 
+.navigation {
+  display: none;
+}
+
 a {
   font-size: 1em;
+  font-family: monospace, sans-serif;
 }
 
 p {
+  margin: 1em;
   padding: 1.2em;
   font-size: 1.2em;
   font-family: monospace, sans-serif;
@@ -51,21 +58,92 @@ p {
 #headshot {
   width: 200px;
   height: 200px;
+  display: block;
+  margin: auto;
 }
 
 #codingPic  {
   width: 200px;
   height: 200px;
+  display: block;
+  margin: auto;
 }
 
-.contentsection{
-  padding: 5px;
-  margin: 5px;
+.content-section{
+  padding: 5%;
   background-color: #ccffcc;
   border: black 1px solid;
+  text-align: center;
 }
 
-.section1 {
+#tab {
+  display: inline;
+  z-index: 10;
+  background-color: #ccffcc;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  padding: 5px 5px;
+}
+
+.mobileMenu {
+  position: fixed;
+  border-left: black solid 1px;
+  width: 70%;
+  height: 100%;
+  z-index: 9;
+  background-color: #ccffcc;
+  text-align: left;
+  text-decoration: none;
+  right: 0px;
+  text-decoration-style: none;
+  padding: 5px 10px 10px 5px;
+}
+
+.mobileMenu ul {
+  padding: 5px;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+.mobileMenu li {
+  margin: 20px;
+  padding: 20px;
+  text-decoration-style: none;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5em;
+
+}
+
+.mobileMenu li a {
+  text-decoration: none;
+  text-decoration-style: none;
+  padding: 5px 20px;
+  color: #003366;
+}
+
+.mobileMenu li a:hover {
+  background-color: white;
+}
+.navigation {
+  display: none;
+}
+
+#tab button {
+  border: none;
+}
+
+#tab button img {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  background-color: #ccffcc;
+}  
+
+#section1 {
   background-image: url("./images/skyway1.jpg");
   height: 600px;
   width: 100%;
@@ -73,21 +151,10 @@ p {
   background-repeat: none;
   background-attachment: fixed;
   background-position: center;
-  background-color: #ccffcc; 
-
-}
-
-.section2 {
-  padding: 3em 7em;
-  text-align: center;
-  border: black 1px solid;
   background-color: #ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace;
 }
 
-.section3 {
+#section3 {
   height: 500px;
   width: 100%;
   background-image: url("./images/coding3.jpg");
@@ -96,19 +163,7 @@ p {
   background-attachment: fixed;
 }
 
-.section4 {
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color:#ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-  font-size: 12px;
-  align-items: center;
-}
-
-.section5 {
+#section5 {
   height: 500px;
   width: 100%;
   background-image: url("./images/coding4.jpg");
@@ -117,15 +172,7 @@ p {
   background-attachment: fixed
 }
 
-.section6 {
-  border: 1px solid black;
-  background-color: #ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-}
-
-.section7{
+#section7{
   height: 500px;
   width: 100%;
   background-image: url("./images/coding1.jpg");
@@ -134,55 +181,13 @@ p {
   background-attachment: fixed
 }
 
-.section8{
-
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color:#ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
-
-}
-
-.section9{
+#section9{
   height: 500px;
   width: 100%;
   background-image: url("./images/coding4.jpg");
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed
-
-}
-
-.section10{
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color: #ccffcc;
-  text-align: center;
-  color: black;
-}
-
-.section11 {
-  height: 500px;
-  width: 100%;
-  background-image: url("./images/coding4.jpg");
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: fixed
-
-}
-
-.section12 {
-  padding: 5% 10%;
-  text-align: center;
-  border: 1px solid black;
-  background-color: #ccffcc;
-  text-align: center;
-  color: black;
-  font-family: monospace, sans-serif;
 }
 
 .photo-grid-container {
@@ -193,7 +198,7 @@ p {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 8px;
+  grid-gap: 2%;
 }
 
 .photo-grid-container img {
@@ -296,113 +301,10 @@ p {
   animation-duration: 4s;
 }
 
-/* When the screen is less than 1100 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media only screen and (max-width: 1100px) {
-  .section2 {
-    padding:0px 0px;
-    text-align: center;
-  }
-
-  .section2 p{
-    padding: 0px;
-    margin: 0px;
-  }
-  .section2 h2 {
-    padding: 2px;
-  }
-  #codingPic  {
-  width: 200px;
-  height: 180px;
-  }
-
-  .navigation {
-    display: none;
-  }
-
-  #tab {
-    display: inline;
-    z-index: 10;
-    background-color: #ccffcc;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    border-left: black solid 1px;
-    border-bottom: black solid 1px;
-    padding: 5px 5px;
-  }
-
-  .mobileMenu {
-    position: fixed;
-    border-left: black solid 1px;
-    width: 70%;
-    height: 100%;
-    z-index: 9;
-    background-color: #ccffcc;
-    text-align: left;
-    text-decoration: none;
-    right: 0px;
-    text-decoration-style: none;
-    padding: 5px 10px 10px 5px;
-  }
-
-  .mobileMenu ul {
-    padding: 5px;
-    text-decoration: none;
-    text-decoration-style: none;
-  }
-
-  .mobileMenu li {
-    margin: 20px;
-    padding: 20px;
-    text-decoration-style: none;
-    text-decoration: none;
-    display: block;
-    font-size: 1.5em;
-
-  }
-
-  .mobileMenu li a {
-    text-decoration: none;
-    text-decoration-style: none;
-    padding: 5px 20px;
-    color: #003366;
-  }
-
-  .mobileMenu li a:hover {
-    background-color: white;
-  }
-  .navigation {
-    display: none;
-  }
-
-  #tab button {
-    border: none;
-  }
-
-  #tab button img {
-    display: inline;
-    height: 50px;
-    width: 50px;
-    background-color: #ccffcc;
-  }  
-
-}
-
 @media screen and (min-width: 1100px) {
   #tab button {
     display: none;
   }
-
- #section1Container {
-   display : grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 20%;
-
- }
- #section1Container p {
-   text-align: center;
-   position: relative;
- }
 
   .mobileMenu {
     background-color: #ccffcc;
@@ -422,6 +324,7 @@ p {
     padding: 10px;
   }
   .navigation {
+    display: inline;
     position: fixed;
     background-color: #ccffcc ;
     width: 100%;
@@ -434,14 +337,11 @@ p {
     padding: 1em;
     display:inline-block;
     background-color: white;
-
   }
-
 
   .navigation li {
     padding: 1em;
     display:inline-block;
-
   }
 
   .navigation li a {
