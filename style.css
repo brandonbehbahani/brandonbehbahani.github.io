@@ -41,6 +41,8 @@ header {
 a {
   font-size: 1em;
   font-family: monospace, sans-serif;
+  margin: 2px;
+  display: block;
 }
 
 p {
@@ -48,11 +50,6 @@ p {
   padding: 1.2em;
   font-size: 1.2em;
   font-family: monospace, sans-serif;
-}
-
-#container {
-  margin: 0;
-  padding: 0;
 }
 
 #headshot {
@@ -69,6 +66,15 @@ p {
   margin: auto;
 }
 
+#social img{
+  width: 10%;
+  height: auto;
+}
+
+#projects a {
+  font-size: 1.5em;
+}
+
 .content-section{
   padding: 5%;
   background-color: #ccffcc;
@@ -76,7 +82,10 @@ p {
   text-align: center;
 }
 
+
 #tab {
+  width: 5%;
+  height: auto;
   display: inline;
   z-index: 10;
   background-color: #ccffcc;
@@ -119,9 +128,10 @@ p {
 }
 
 .mobileMenu li a {
+  text-align: center;
   text-decoration: none;
   text-decoration-style: none;
-  padding: 5px 20px;
+  padding: 1%;
   color: #003366;
 }
 
@@ -138,8 +148,8 @@ p {
 
 #tab button img {
   display: inline;
-  height: 50px;
-  width: 50px;
+  width: 100%;
+  height: 100%;
   background-color: #ccffcc;
 }  
 
@@ -191,19 +201,22 @@ p {
 }
 
 .photo-grid-container {
-  margin: auto;
-  width: 70%;
-  padding: 10px;
+  display: grid;
   justify-items: center;
   align-items: center;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2%;
+  column-gap: 2px;
+  row-gap: 15px;
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .photo-grid-container img {
-  width: 100px; 
-  height: 100px;
+  width: 150px; 
+  height: 150px;
 }
 
 .photo-grid-container img:hover {
