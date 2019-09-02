@@ -110,11 +110,17 @@ p {
 
 .project-icon {
   display: block;
-  margin: auto;
-  margin-bottom: 5px;
   padding: 10px;
   border: solid black 1px;
-  width: 205px; 
+  width: 205px;
+  margin: 25px;
+}
+
+#project-grid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 #projects img {
@@ -127,7 +133,6 @@ p {
 }
 
 #gallery {
-  height: 400px;
   padding-left: auto;
   padding-right:auto;
 }
@@ -135,17 +140,16 @@ p {
 .photo-grid-container {
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 0;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .photo-grid-container img {
   padding: 0;
   margin: 0;
-  width: 80px;
-  height: 90px;
+  width: 30%;
+  height: auto;
 }
 
 .photo-grid-container img:hover {
