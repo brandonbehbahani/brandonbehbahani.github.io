@@ -110,8 +110,11 @@ p {
 
 .project-icon {
   display: block;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 5px;
   padding: 10px;
+  border: solid black 1px;
+  width: 205px; 
 }
 
 #projects img {
