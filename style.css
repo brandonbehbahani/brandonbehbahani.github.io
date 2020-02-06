@@ -29,7 +29,7 @@ img {
 	transition-property: background-color color;
   transition-duration: 0.5s;
   transition-timing-function: linear;
-  max-width: 500px;
+	width: 500px;
   padding: 45px;
   margin: 10px auto;
   text-align: center;
