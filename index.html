@@ -2,118 +2,45 @@
 </html>
   <head>
     <title>Brandon Behbahani</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./javascript/app.js"></script>
     <link rel="stylesheet" type ="text/css"href="style.css">
+    <script src="./app.js"></script>
   </head>
   <body>
-    <div id="tab">
-      <button onclick="displayMobileMenu()"><img id="menu-tab" src="./images/menu.png"/></button>
-    </div>
-    <ul class="navigation" id="navigation">
-      <li><a href="#">Home</a ></li>
-      <li><a href="#aboutme">About</a ></li>
-      <li><a href="#projects">Projects</a ></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact Me</a ></li>
-    </ul>
-    <section id="section1">
-        <video id="video" autoplay loop muted>
-          <source type="video/mp4" src="./video/spin_cycle.mp4"></source>\
-      </video>
-      <div class="fadecover">
+    <div id="wrapper">
 
-        <header id="title">
-          <h1>BRANDON BEHBAHANI</h1>
-        </header>
-      </div>
-    </section>
-      <section class="content-section" id="about-me">
-        <div>
-          <h2 class="dropin">Who I Am.</h2>
-          <br>
-          <img class="dropin" id="headshot" src="./images/brandon1.jpg" alt="me">
-          <br>
-          <br>
-          <p>My name is Brandon Komron Behbahani. I am a student currently working on a bachelors in computer science. I do freelance web development and blockchain development work. Feel free to contact me about any questions about services offered. You can also check out me upworks.com and fiverr.com  profiles.</P>
-          <br>
+      <div id="content" class="light-mode">
+        <div class="toggle">
+
+          <input type="checkbox" id="checktoggle" onclick="darkLightToggle()"/>
+          <label for="checktoggle"></label>
+
         </div>
-        <div>
-          <h2 class="dropin">What I do.</h2>
-          <br>
-          <img class="dropin" id="codingPic"src="./images/pccode.jpeg" alt="coding" >
+        <h1>Brandon Behbahani</h1>
+        <h2>a web and smart contract developer</h2>
+        <h3>About Me</h3>
+        <p>I am a computer science student at Miami Dade College. I like to code. I specialize in web and smart contract development.</p>
+
+        <h3>My Projects</h3>
+        <p>Here is a few of the things that I have worked on.</p>
+
+        <a href="https://github.com/brandonbehbahani/sona">Sona</a>
         <br>
-          <p>I have worked on several projects over the last few years. Ranging from mobile phone software to adventures in blockchain mining. Currently I work heavily with dveloping web apps and ethereum dapp and token development. I have made a few of my own tokens for various purposes. You can find out more in my Projects section. </p>
-        </div>
+        <img src="#">
+        <br>
+        <a href="https://github.com/brandonbehbahani/CalderaMultiToken">Caldera</a>
+        <br>
+        <img src="#">
+        <h3>Links</h3>
+        <a href="https://www.linkedin.com/in/brandon-behbahani-1bab9b110/">Linkdin</a>
+        <br>
+        <a href="https://codepen.io/komron">codepen</a>
 
-      </section>
-
-
-      <section id="section3">
-
-      </section>
-    <section class="content-section" id="projects">
-      <h2>PROJECTS</h2>
-      <p>Here is just a small collection of projects that I have worked on:</p>
-      <div id="project-grid">
-        <div class="project-icon">
-            <a href="https://github.com/komronhussaini/sona">
-              <img src="./images/snalogo.png" >
-              <a href="" >SONA</a>
-            </a>
-        </div>
-        <div class="project-icon">
-            <a href="https://github.com/komronhussaini/BreadCrumbMiami">
-              <img src="./images/breadCrumb.png" >
-              <a href="" >Bread Crumb</a>
-            </a>
-        </div>
+        <h3>Contact Me</h3>
+        <p>7868165919</p>
+        <p>brandonbehbahani@gmail.com</p>
       </div>
-      
-      
 
-    </section>
-
-    <section id="section5">
-    </section>
-
-    <section class="content-section" id="gallery">
-      <h2>GALLERY</h2>
-      <div class="photo-grid-container">
-        <img src="./images/oysterbed.jpg" alt=""/>
-        <img src="./images/sunset.jpg" alt=""/>
-        <img src="./images/beach.jpg" alt=""/>
-        <img src="./images/everglades.jpg" alt=""/>
-        <img src="./images/miami2.jpg" alt=""/>
-        <img src="./images/boston.jpg" alt=""/>
-        <img src="./images/eclipse1.jpg" alt=""/>
-        <img src="./images/biscayne.jpg" alt=""/>
-        <img src="./images/treasuretruck.jpg" alt=""/>
       </div>
-    </section>
-
-    <section id="section7">
-    </section>
-
-    <section class="content-section" id="social">
-      <h2>SOCIAL</h2>
-      <div id="social-grid">
-        <a class="dropin" href="https://github.com/brandonbehbahani"><img src="./images/github.png"></a>
-        <a class="dropin" href="https://www.facebook.com/brandon.behbahani"><img src="./images/facebook.png"></a>
-        <a class="dropin" href="https://twitter.com/komron_hussaini"><img src="./images/twitter.png"></a>
-        <a class="dropin" href="https://www.linkedin.com/in/brandon-behbahani-1bab9b110/"><img src="./images/linkedin.png"></a>
-      </div>
-    </section>
-
-    <section id="section9">
-    </section>
-
-    <section class="content-section" id="section10">
-      <h2>CONTACT ME</h2>
-      <p>Phone:<a href="tel:1-786-816-5919">(786)816-5919</p>
-      <p>Email: brandonebehbahani@gmail.com</p>
-    </section>
-    <script  src="./javascript/animation.js"></script>
   </body>
 
 
