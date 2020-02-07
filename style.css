@@ -13,6 +13,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #00bfc9;
 }
 
 img {
@@ -27,11 +28,12 @@ img {
 }
 
 #content {
+	max-width: 600px;
 	transition-property: background-color color;
   transition-duration: 0.5s;
   transition-timing-function: linear;
   padding: 45px;
-	margin: 100px;
+	margin: 10px auto 10px auto;
   text-align: center;
   border: grey solid 3px;
   border-radius: 20px;box-shadow: 9px 9px 16px rgba(117, 117, 117, 0.6);
@@ -49,8 +51,8 @@ img {
 }
 
 .dark-mode {
-	color: white;
-	background-color: black;
+	color: #e8e8e8;
+	background-color: #212121;
 }
 
 .light-mode {
