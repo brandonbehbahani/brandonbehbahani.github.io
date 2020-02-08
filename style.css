@@ -12,8 +12,21 @@ body {
 }
 
 a {
+	font-size: 3vw;
 	text-decoration: none;
 	color: #00bfc9;
+}
+
+h1 {
+	font-size: 5vw;
+}
+
+h2 {
+	font-size: 3.5vw;
+}
+
+h3 {
+	font-size: 4vw;
 }
 
 p  {
@@ -21,8 +34,8 @@ p  {
 }
 
 img {
-	width: 100px;
-	height: 100px;
+	width: 30%;
+	height: auto;
 }
 
 #wrapper {
@@ -32,12 +45,11 @@ img {
 }
 
 #content {
-	max-width: 800px;
 	transition-property: background-color color;
   transition-duration: 0.5s;
   transition-timing-function: linear;
   padding: 45px;
-	margin: 20px auto 20px auto;
+	margin: 20px 10% 20px 10%;
   text-align: center;
   border: grey solid 3px;
   border-radius: 20px;
