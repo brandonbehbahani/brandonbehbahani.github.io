@@ -12,52 +12,50 @@ body {
 }
 
 a {
-	font-size: 3vw;
+	font-size: 1.5em;
 	text-decoration: none;
 	color: #00bfc9;
 }
 
 h1 {
-	font-size: 5vw;
+	font-size: 2em;
 }
 
 h2 {
-	font-size: 3.5vw;
+	font-size: 1.5em;
 }
 
 h3 {
-	font-size: 4vw;
+	font-size: 1.5em;
 }
 
 p  {
- font-size: 3vw;
+ font-size: 1.2em;
 }
 
 img {
-	width: 30%;
-	height: auto;
+	width: 100px;
+	height: 100px;
 }
 
 #wrapper {
   background-image: url("https://images.pexels.com/photos/86695/sky-clouds-outdoors-scenic-86695.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: repeat;
 	animation: animatedBackground 100s linear infinite;
+	background-size: cover 3000px;
 }
 
 #content {
+	width: 25em;
 	transition-property: background-color color;
   transition-duration: 0.5s;
   transition-timing-function: linear;
   padding: 45px;
-	margin: 20px 10% 20px 10%;
+	margin: auto;
   text-align: center;
   border: grey solid 3px;
   border-radius: 20px;
 	box-shadow: 9px 9px 16px black;
-}
-
-#email {
-	font-size: 2vw;
 }
 
 #image1 {
