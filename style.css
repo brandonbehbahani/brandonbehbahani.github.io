@@ -42,7 +42,7 @@ img {
   background-image: url("https://images.pexels.com/photos/86695/sky-clouds-outdoors-scenic-86695.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: repeat;
 	animation: animatedBackground 100s linear infinite;
-	background-size: 1000px 3000px;
+	background-size: 4000px 2500px;
 }
 
 #content {
