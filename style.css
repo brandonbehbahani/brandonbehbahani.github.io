@@ -15,6 +15,7 @@ a {
 	font-size: 1.6em;
 	text-decoration: none;
 	color: #00bfc9;
+	margin: 5px;
 }
 
 h1 {
@@ -22,15 +23,15 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 }
 
 p  {
- font-size: 1.5em;
+ font-size: 1.6em;
 }
 
 img {
@@ -46,7 +47,7 @@ img {
 }
 
 #content {
-	width: 25em;
+	width: 30em;
 	transition-property: background-color color;
   transition-duration: 0.5s;
   transition-timing-function: linear;
