@@ -1,124 +1,17 @@
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
-
-body {
-	padding: 0;
+* {
 	margin: 0;
-	background-color: black;
-	height: 100%
-
+	padding: 0;
 }
 
-a {
-	font-size: 1.6em;
-	text-decoration: none;
-	color: #00bfc9;
-	margin: 5px;
+#header {
+	background-color: red;
+	padding: 1em;
 }
 
-h1 {
-	font-size: 2.2em;
+#links {
+	padding: 1.2em;
 }
 
-h2 {
-	font-size: 1.7em;
-}
-
-h3 {
-	font-size: 1.7em;
-}
-
-p  {
- font-size: 1.6em;
-}
-
-img {
-	width: 100px;
-	height: 100px;
-}
-
-#wrapper {
-  background-image: url("https://images.pexels.com/photos/86695/sky-clouds-outdoors-scenic-86695.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-repeat: repeat;
-	animation: animatedBackground 100s linear infinite;
-	background-size: 200em cover;
-}
-
-#content {
-	width: 30em;
-	transition-property: background-color color;
-  transition-duration: 0.5s;
-  transition-timing-function: linear;
-  padding: 45px;
-	margin: auto;
-  text-align: center;
-  border: grey solid 3px;
-  border-radius: 20px;
-	box-shadow: 9px 9px 16px black;
-}
-
-#image1 {
-  border: solid black 5px;
-  width: 100px;
-  height: 100px;
-  background-color: grey;
-}
-
-.dark-mode {
-	color: #e8e8e8;
-	background-color: #212121;
-}
-
-.light-mode {
-	color: black;
-	background-color: white;
-}
-
-.toggle{
-	width: 70px;
-	height: 30px;
-  transform: translate(-50%,-50%);
-}
-
-.toggle input[type="checkbox"]{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: -2;
-  border: none;
-  outline: none;
-}
-
-.toggle label{
-  width: 70px;
-  height: 30px;
-  border-radius: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #bfbfbf;
-  transition: background .5s ease-in-out;
-}
-
-.toggle label:after{
-  content: '';
-  width: 30px;
-  height: 30px;
-  background: #3F4A63;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: -1px;
-  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.toggle input[type="checkbox"]:checked + label:after{
-  left : 42px;
-}
-
-.toggle input[type="checkbox"]:checked + label{
-  background: #8aadff;
+#projects {
+	padding: 1.2em;
 }
