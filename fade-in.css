@@ -42,3 +42,9 @@ animation-delay: 1.2s;
 -moz-animation-delay: 1.6s;
 animation-delay: 1.6s;
 }
+
+.fade-in.five {
+-webkit-animation-delay: 1.9s;
+-moz-animation-delay: 1.9s;
+animation-delay: 1.9s;
+}
