@@ -58,6 +58,13 @@
 	margin: 5em;
   }
 
+	.footer {
+		padding: 10px;
+		width: 100%;
+		min-height: 10vh;
+		background-color: #708090;
+	}
+
 
   @media (pointer: coarse) and (hover: none) {
 	.header {
