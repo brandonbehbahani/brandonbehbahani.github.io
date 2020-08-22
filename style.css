@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+.center {
+  vertical-align: center;
+}
+
 .navigation {
 	width: 100%;
   }
