@@ -59,10 +59,32 @@
   }
 
 	.footer {
-		padding: 10px;
+		padding: 0.2em;
 		width: 100%;
-		min-height: 10vh;
+		min-height: 20em;
 		background-color: #708090;
+		text-align: center;
+	}
+
+	.project {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#projects {
+		margin:0;
+		min-height: 400px;
+	}
+
+	#links {
+		margin: 0;
+		min-height: 400px;
+	}
+
+	#contact {
+		margin: 0;
+		min-height: 400px;
 	}
 
 
