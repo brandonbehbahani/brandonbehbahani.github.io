@@ -1,102 +1,48 @@
-* {
-	margin: 0;
-	padding: 0;
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-.center {
-  vertical-align: center;
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.navigation {
-	width: 100%;
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
-
-  .navigation li {
-	list-style-type: none;
-	display: inline;
-	padding: 0.5em;
+  header video {
+    display: none;
   }
-
-  .header {
-	position: relative;
-	background-color: black;
-	height: 55vh;
-	min-height: 25rem;
-	width: 100%;
-	overflow: hidden;
-  }
-
-  .header video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: 0;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-  }
-
-  .header .container {
-	position: relative;
-	z-index: 2;
-  }
-
-  .header .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: 0.5;
-	z-index: 1;
-  }
-
-  .title {
-	color: white;
-	margin: 5em;
-  }
-
-	.footer {
-		padding: 0.2em;
-		width: 100%;
-		min-height: 20em;
-		background-color: #708090;
-		text-align: center;
-	}
-
-	.project {
-		max-width: 400px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#projects {
-		margin:0;
-		min-height: 400px;
-	}
-
-	#links {
-		margin: 0;
-		min-height: 400px;
-	}
-
-	#contact {
-		margin: 0;
-		min-height: 400px;
-	}
-
-
-  @media (pointer: coarse) and (hover: none) {
-	.header {
-	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-	header video {
-	  display: none;
-	}
-  }
+}
