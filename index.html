@@ -8,54 +8,102 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="fade-in.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
+
   </head>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top fade-in" id="navigation">
+      <a class="navbar-brand" href="#">BB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#projects">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#links">Links</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <header>
       <div class="overlay"></div>
       <video class="fade-in two" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="video.mp4" type="video/mp4">
       </video>
+
       <div class="container h-100 fade-in">
         <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-3">Brandon Behbahani</h1>
+          <div class="w-100 text-white" id="main-header">
+            <h1 class="display-4">Brandon Behbahani</h1>
             <p class="lead mb-0">A web and smart contract developer</p>
           </div>
         </div>
+
       </div>
     </header>
 
-    <div class="container">
-
-      <div class="fade-in three">
+    <div class="fade-in three container" id="about-me">
+      <h3 class="display-4">ABOUT ME</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <p>I like to write code. I specialize in web and smart contract development.</p>
+          <p>I started out doing wordpress development in a freelance setting. From there I have worked for ecommerce companies large and small.</p>
+          <p>I have been creating smart contracts in solidity for about 3 years. Blockchain is a passion of mine and I think that Ethereum can be
+          used to chjange the world for good. </p>
+        </div>
+        <div class="col-md-6">
+          <img src="code.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+      <div class="fade-in three container" id="projects">
         <h3 class="display-4">PROJECTS</h3>
         <p>Here are a few things that I am working on:</p>
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="https://project-live-dro-1535940450957.web.app/">Live Drop</a>
-            <p>This project allows users to post digital content and digital items at real world geographic location.</p>
-          </div>
-          <div class="col-sm-4">
-            <a href="https://github.com/brandonbehbahani/CalderaMultiToken">Caldera</a>
-            <p>A software helps allows users to create and deploy tokens and items on the ethereum blockchain.</p>
-          </div>
-          <div class="col-sm-4">
-            <a href="https://github.com/brandonbehbahani/sona">Sona</a>
-            <p>A decentralized organization software that is powered by user ratings.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <img src="tablet.jpg" />
+                <a class="card-title" href="https://project-live-dro-1535940450957.web.app/">Live Drop</a>
+                <p class="card-text">This project allows users to post digital content and digital items at real world geographic location.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img src="stock.jpg" />
+                <a class="card-title" href="https://github.com/brandonbehbahani/CalderaMultiToken">Caldera</a>
+                <p class="card-text" >A software helps allows users to create and deploy tokens and items on the ethereum blockchain.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img src="money.jpg" />
+                <a href="https://github.com/brandonbehbahani/sona">Sona</a>
+                <p class="card-text" >A decentralized organization software that is powered by user ratings.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-    <div id="links" class="fade-in four">
-        <br>
-        <h3 class="display-4">LINKS</h3>
-        <ul class="list-unstyled">
-          <li><a href="https://codepen.io/komron">Codepen</a></li>
-          <li><a href="https://www.linkedin.com/in/brandon-behbahani-1bab9b110/">Linkedin</a></li>
-        </ul>
-    </div>
-    <div id="contact" class="fade-in five">
+
+    <div id="contact" class="fade-in five container">
         <h3 class="display-4">CONTACT ME</h3>
         <ul class="list-unstyled">
           <li><a href="tel:786-816-5919">786-816-5919</a></li>
@@ -63,12 +111,35 @@
         </ul>
     </div>
   </div>
-    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+
+
+  <div id="links" class="fade-in four container">
+      <h3 class="display-4">LINKS</h3>
+
+      <div class="row">
+        <div class="col-sm-4 p-3"><a href="https://youtube.com/c/komron/"><img width="100px" src="youtube.png"></a></div>
+        <div class="col-sm-4 p-3"><a href="https://www.linkedin.com/in/brandon-behbahani-1bab9b110/"><img width="100px" src="linkedin.png"></a></div>
+        <div class="col-sm-4 p-3"><a href="https://twitter.com/komron_hussaini"><img width="100px" src="twitter.png"></a></div>
+        <div class="col-sm-4 p-3"><a href="https://youtube.com/c/komron/"><img width="100px" src="twitch.png"></a></div>
+        <div class="col-sm-4 p-3"><a href="https://www.linkedin.com/in/brandon-behbahani-1bab9b110/"><img width="100px" src="medium.png"></a></div>
+      </div>
+
+  </div>
+  <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
       <p>Created by Brandon Behbahani 2020</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+
+  window.addEventListener("scroll", function(){
+    var topDistance = window.scrollY;
+    document.getElementById("main-header").style = "transform : translateY(" + topDistance * 0.5 + "px);";
+    console.log(topDistance);
+
+   });
+  </script>
   </body>
 
 </html>

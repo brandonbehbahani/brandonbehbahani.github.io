@@ -1,10 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 header video {
@@ -12,7 +21,7 @@ header video {
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   width: auto;
   height: auto;
   z-index: 0;
@@ -38,3 +47,22 @@ header .overlay {
   z-index: 1;
 }
 
+#about-me {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+#projects {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+#contact {
+  padding-top: 100px;
+  min-height: 50vh;
+}
+
+#links {
+    padding-top: 100px;
+    min-height: 80vh;
+}
